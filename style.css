@@ -1,0 +1,87 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    margin: 30px;
+    padding: 8px 15px;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background: #a5c7f9;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+    background: #496692;
+}
+
+.modal__dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    z-index: 99999;
+    transition: 0.8s ease-in;
+}
+
+.modal__dialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal__close {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    margin: 10% auto;
+    background: #fff;
+    padding-top: -50px;
+}
+
+.modal__dialog_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 20px;
+    text-decoration: none;
+    background: #7faff6;
+    color: #fff;
+    transition: 0.6s ease-in-out;
+}
+
+.modal__dialog_close:hover {
+    background: #496692;
+    border-radius: 100%;
+}
+
+.modal__dialog_text {
+    font-size: 49px;
+    color: #000000;
+}
